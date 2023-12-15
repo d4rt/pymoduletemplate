@@ -5,7 +5,7 @@
 from setuptools import setup, find_packages
 
 
-with open('README.rst') as f:
+with open('README.md') as f:
     readme = f.read()
 
 with open('LICENSE') as f:
@@ -14,11 +14,12 @@ with open('LICENSE') as f:
 setup(
     name='sample',
     version='0.1.0',
-    description='Sample package for Python-Guide.org',
+    description='Module Template',
     long_description=readme,
-    author='Kenneth Reitz',
-    author_email='me@kennethreitz.com',
-    url='https://github.com/kennethreitz/samplemod',
+    long_description_type='text/markdown',
+    author='Duncan Turnbull',
+    author_email='duncan@v7labs.com',
+    url='https://github.com/d4rt/pymoduletemplate',
     license=license,
     packages=find_packages(exclude=('tests', 'docs'))
 )

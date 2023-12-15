@@ -1,5 +1,11 @@
 init:
-	pip install -r requirements.txt
+	pip install -r requirements-dev.txt
 
 test:
-	nosetests tests
+	pytest tests/
+
+docs:
+    cd docs && make html
+
+clean:
+	cd docs && make clean
